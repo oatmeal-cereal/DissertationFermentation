@@ -1,4 +1,0 @@
-paper collection pipeline - licenses
-different methods of attempted ner - settled on regex patterns and entityruler with spacy
-a handful of fermentation papers have been collected
-manual labelling of relations just to display a graph
