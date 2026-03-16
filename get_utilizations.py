@@ -18,10 +18,10 @@ for sent, entities in annotations:
         if label == 'KIND_OF_UTILIZATION_TESTED':
             utilizations.add(strip_word(sent[start:end].lower()))
             
-utilizations.update(['forms', 'processes', 'consumes', 'breaks down', 'hydrolyse', 'exhibit', 'carbon source', 'nitrogen source', 'co-metabolize', 'metabolize', '-producing'])
+utilizations.update(['forms', 'processes', 'consumes', 'breaks down', 'hydrolyse', 'exhibit', 'carbon source', 'nitrogen source', 'co-metabolize', 'metabolize', '-producing', 'become', 'becomes', 'becoming', 'became', 'against', 'metabolising', 'react', 'protect'])
 utilizations = utilizations - set(['alcoholic fermentation', 'co-metabolized', '', 'changing', 'change', 'changed'])
 
-print(utilizations)
+print(sorted(utilizations))
 print(len(utilizations))
 
 with open('list_files\\utilizations_list.json', 'w', encoding='utf-8') as f:
