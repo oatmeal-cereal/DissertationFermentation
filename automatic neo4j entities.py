@@ -27,7 +27,7 @@ current_relations = ['CONSUMES', 'PRODUCES', 'BECOMES']
 def preprocess_label(label):
     if label[0].isnumeric():
         label = label.replace(label[0], numbers_map[int(label[0])])
-    replace_chars = ['-', '(', ')', ' ', '.', ',']
+    replace_chars = ["-", "(", ")", " ", ".", ",", "\'", "/", "\"", ";", "&", ":", ";", "|", "%", "’", "?", "!", "«", "+", "（", "）", "？", "，"]
     for char in replace_chars:
         label = label.replace(char, '')
     return label
