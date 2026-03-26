@@ -1,0 +1,4 @@
+production of (metabolite) from (substrate)
+(metabolite)-producing
+accumulation of (metabolite) by (microbe)
+(metabolite) production using/with/from/via (microbe)

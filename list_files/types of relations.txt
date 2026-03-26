@@ -1,0 +1,11 @@
+microbe-consumes-chemical
+microbe-produces-chemical
+chemical-becomes-chemical
+
+consumption of CHEMICAL by MICROBE
+conversion of CHEMICAL to CHEMICAL
+hydrolysis of chemical to CHEMICAL
+production of CHEMICAL by MICROBE
+MICROBE produces CHEMICAL
+MICROBE grows in the presence of CHEMICAL
+proliferation of MICROBE in the presence of CHEMICAL

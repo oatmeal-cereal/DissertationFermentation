@@ -1,0 +1,63 @@
+The microbial consortium between Pediococcus acidilactici and Acetobacter cerevisiae enabled the metabolization of all the xylose contained in the liquor
+Some wild-type strains have a strong tolerance for lignocellulose-derived inhibitors, e.g. lactic acid-producing bacteria, Lactobacillus plantarum, have the ability to ferment in the presence of 8.0 g L^−1 furfural and 6.0 g L%−1 5-hydroxymethylfurfural (5-HMF)
+Since A. cerevisiae is also a producer of acetic acid
+the fermentation processes presented here also demonstrated the ability of P. acidilactici and A. cerevisiae, and co-cultivation, to consume different sugars
+it can be seen that both P. acidilactici and A. cerevisiae were able to metabolize 5-HMF and furfural
+Broad bean paste is usually made by the following three phases: a natural fermentation of chili-to-moromi, a conversion from broad bean to koji by Aspergillus oryzae
+overnight grown RCM culture (Clostridium acetobutylicum) and incubated under anaerobic conditions for 24 h
+Anaerobic fermentation without enzymatic assistance by Saccharomyces cerevisiae with temperature 30 °C was modeled in all scenarios
+co-culture of Bacillus sp. MB2, Bacillus sp. WB8A and B. pumilus strain WB1A
+co-cultures of Piromyces and Methanobrevibacter ruminantium
+FA production from rice bran was four times greater than Aspergillus oryzae through fermentation of A. oryzae and Rhizopus oryzae co-culture.
+lactic acid fermentation was performed with optimal OB hydrolysate by Lactobacillus delbrueckii subsp. bulgaricus OZZ4 and Lactobacillus plantarum OZH8
+Strains of lactic acid bacteria (LAB); Lactobacillus delbrueckii subsp. bulgaricus OZZ4 and Lactobacillus plantarum OZH8
+sorbitol is converted to sorbose by Gluconobacter oxydans
+Pseudoglyconobacter Saccharoketogenes for 72 h to produce sodium keto-gluconic acid
+The observation that lignosulphonic acids inhibit the fermentation of sucrose, glucose and invert sugar with Candida utilis
+Saccharomyces cerevisiae ferments mainly hexoses
+invertase produced by Candida utilis for degrading the disaccharide to glucose and fructose
+B. subtilis fermented soybeans foods in various parts of the world. One of the common examples is Kinema
+Bacillus spp. is the most dominant naturally fermenting agents in soybeans
+B. subtilis is a group of related strains under the family Bacillaceae
+These traditionally fermented soyfoods are littered with several other microbial species such as Enterococcus faecium, Candia parapsilosis, Geotrichum candidum etc.
+prepared Thua-Nao using pure culture of B. subtilis
+B. subtilis during Thua Nao fermentation releases proteinases that play important role in proteolysis of soy proteins
+B. subtilis fermentation tends to increase total polyphenolic compound and anthocyanins, upto 10 and 250%, respectively during Natto fermentation of black soybeans
+Fermentation of soybeans, particularly with B. subtilis
+fermented soybeans inhibits adhesion of ETEC K88 in Rhizopus fermented soybeans
+starter was prepared using yeast (Saccharomyces cerevisiae) and mold (Rhizopus oryzae)
+Defined fermentation starter (prepared from rice using pure cultures of S. cerevisiae and R. oryzae) was mixed
+similar alcohol content (6.68% v/v) in millet Jand fermented by using starter made from Rhizopus and Saccharomyces spp
+semisolid state fermentation on glucose in taro fermentation using starter containing R. tankinensis, R. oryzae, R. chinensis and S. cerevisiae, but contrary to our finding, they reported a significantly higher yield of alcohol in semisolid fermentation than that of solid state fermentation
+Spontaneous whey fermentation mostly depends on lactic acid bacteria (LAB), which convert lactose (the major component of whey) into lactic acid
+lactic acid production of 5.3g/L after 48h at 37 ◦C using Lactobactillus bulgaricus for whey fermentation
+L. acidophilus, L. bulgaricus, and L. casei presented more proteolytic activity than Str. thermophilus and Lb. paracasei
+reuterin produced by Limosilactobacillus reuteri is reported as a potent compound with broad-range antimicrobial activity that inhibits fungi but also Gram-negative bacteria
+Limosilactobacillus reuteri uses a CoA-dependent pathway
+pediocins produced by Pediococcus spp.
+Helveticin-M, produced by Lactobacillus crispatus
+Lactococcus lactis and Lactiplantibacillus plantarum strains were studied in model cheeses against Listeria monocytogenes
+Staph. equorum inhibited the growth of L. monocytogenes
+C. crustorum, Lpb. plantarum and Lmb. fermentum decreased the levels of L. monocytogenes in cheese
+E. faecium KE82 is suggested as a protective culture, but the indigenous bacteriocin-producing LAB might contribute to the inhibition of L. monocytogenes in Graviera
+Pecorino Sardo PDO Lpb. plantarum (commercial) and an autochthonous LAB (Lb. delbruekii ssp. sunkii). Protection against L. monocytogenes Lb. delbruekii ssp. sunkii was as effective as the commercial culture for the protection against L. monocytogenes
+Lcb. paracasei delayed the growth of Staph. aureus and L. monocytogenes in Coalho cheese
+E. faecium CRL1879 ensured an efficient control of L. monocytogenes for up to 30 days without altering the organoleptic properties of the artisanal cheese
+milk with a 10% yogurt starter containing Lactobacillus delbrueckii subsp. bulgaricus and Streptococcus thermophilus, also various S. cerevisiae concentrations
+ethanol production by S. cerevisiae
+S. cerevisiae addition was also found to slightly inhibit the growth of L. delbrueckii subsp. bulgaricus and S. thermophilus
+Saccharomyces cerevisiae, a well-known yeast strain known for its health benefits, fermentative metabolism, and ethanol production capabilities, to enhance yogurt quality
+it has been shown that S. cerevisiae could grow in milk and produce small amounts of ethanol, glycerol, and lactic acid
+While milk itself is not a suitable growth medium for S. cerevisiae due to limitations like the inability to ferment milk’s lactose
+L. delbrueckii subsp. bulgaricus and S. thermophilus can utilize lactose
+However, L. delbrueckii subsp. bulgaricus and S. thermophilus cannot naturally use galactose
+S. cerevisiae can metabolize galactose through its Leloir pathway producing UDP-glucose
+S. cerevisiae culture was transferred and grown on Malt Extract Agar (MEA) slants at 30 °C
+L. delbrueckii subsp. bulgaricus and S. thermophilus cultures were regrown on MRS agar slants at 42 °C for 2 days and on M17 agar at 37 °C for 2 days, respectively
+30 °C to represent the suboptimal temperature for both L. delbrueckii subsp. bulgaricus and S. thermophilus and to provide the optimal temperature for S. cerevisiae
+the treatment with S. cerevisiae addition (Figure 2b, Sc-1–Sc-4) showed a significantly lower pH than the milk without any culture (Figure 2b, Sc-0). In both experimental and control groups, increasing the concentration of S. cerevisiae resulted in a lower pH after incubation
+indicating that S. cerevisiae could inhibit the growth of L. delbrueckii subsp. bulgaricus and S. thermophilus to some degree
+L. delbrueckii subsp. bulgaricus and S. thermophilus support each other through protocooperation where metabolite exchange occurs
+both L. delbrueckii subsp. bulgaricus and S. thermophilus have ethanol tolerance
+here are some of my favourite letters of the alphabet: g, h, k, l, r, b and m!
+I was once sent to the ER for endometriosis... they said I don't need antibiotics.

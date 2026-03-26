@@ -1,0 +1,244 @@
+(MICROBE_NAME: L. thermotolerans)~PRODUCES~(COMPOUND: glycerol)|(MICROBE_NAME: L. thermotolerans)~PRODUCES~(COMPOUND: 2-phenyl ethanol)|(MICROBE_NAME: S. cerevisiae)~PRODUCES~(COMPOUND: glycerol)|(MICROBE_NAME: S. cerevisiae)~PRODUCES~(COMPOUND: 2-phenyl ethanol)
+(MICROBE_NAME: Candida utilis)~CONSUMES~(COMPOUND: xylose)
+(COMPOUND: ethanol)~BECOMES~(COMPOUND: acetic acid)
+(COMPOUND: glucose)~BECOMES~(COMPOUND: gluconic acid)
+(MICROBE_NAME: C. zemplinina)~CONSUMES~(COMPOUND: fructose)
+
+
+(MICROBE_NAME: Lpb. plantarum)~PRODUCES~(COMPOUND: pyrazines)
+(MICROBE_NAME: B. subtilis var. natto)~PRODUCES~(COMPOUND: pyrazines)
+
+
+(MICROBE_NAME: B. subtilis var. natto)~CREATES~(PRODUCT: natto)
+(COMPOUND: 2-furfuryl methanol)~CONTRIBUTES SENSORY~(SENSORY: bread)
+(COMPOUND: acetic acid)~CONTRIBUTES SENSORY~(PRODUCT: cheese)|(COMPOUND: hexanoic acid)~CONTRIBUTES SENSORY~(SENSORY: cheese)|(COMPOUND: benzoic acid)~CONTRIBUTES SENSORY~(SENSORY: cheese)
+(ENZYME: acetolactate)~CATALYSES~(COMPOUND: ketobutyric acid)
+
+
+
+
+
+
+(COMPOUND: riboflavin)~BECOMES~(COMPOUND: tricarboxylic acid)|(COMPOUND: pyridoxin)~BECOMES~(COMPOUND: tricarboxylic acid)
+
+
+
+
+(COMPOUND: glucose)~BECOMES~(COMPOUND: ethanol|(COMPOUND: fructose)~BECOMES~(COMPOUND: ethanol)|(COMPOUND: ethanol)~BECOMES~(COMPOUND: acetic acid)
+
+(COMPOUND: glucose)~BECOMES~(COMPOUND: ethanol|(COMPOUND: fructose)~BECOMES~(COMPOUND: ethanol)
+(COMPOUND: ethanol)~BECOMES~(COMPOUND: acetic acid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(COMPOUND: citric acid)~BECOMES~(COMPOUND: diacetyl)|(COMPOUND: citric acid)~BECOMES~(COMPOUND: acetoin)|(COMPOUND:  citric acid)~BECOMES~(COMPOUND: 2,3-butanediol)
+(COMPOUND: phenylalanine)~BECOMES~(COMPOUND: phenylacetaldehyde)
+
+
+
+
+
+
+
+
+
+(SUBSTRATE: sweet sorghum)~BECOMES~(COMPOUND: bioethanol)
+
+
+(SUBSTRATE: orange waste)~BECOMES~(COMPOUND: lactic acid)|(SUBSTRATE: orange waste)~BECOMES~(COMPOUND: propanoic acid)
+
+
+
+
+
+
+
+
+
+
+
+(MICROBE_NAME: Acetobacter spp)~CONSUMES~(COMPOUND: glucose)|(MICROBE_NAME: Acetobacter)~CONSUMES~(COMPOUND: ethanol)|(MICROBE_NAME: Acetobacter)~PRODUCES~(COMPOUND: acetic acid)|(MICROBE_NAME: Acetobacter)~PRODUCES~(COMPOUND: gluconic acid)|(COMPOUND: glucose)~BECOMES~(COMPOUND: gluconic acid)|(COMPOUND: ethanol)~BECOMES~(COMPOUND: acetic acid)
+
+(COMPOUND: sorbitol)~BECOMES~(COMPOUND: ascorbic acid)
+
+(MICROBE_NAME: Gluconobacter oxydans)~CONSUMES~(COMPOUND: sorbitol)|(MICROBE_NAME: Gluconobacter oxydans)~PRODUCES~(COMPOUND: sorbose)|(COMPOUND: sorbitol)~BECOMES~(COMPOUND: sorbose)
+
+
+
+
+
+(COMPOUND: gulonic acid)~BECOMES~(COMPOUND: methyl gluconate)
+
+
+
+
+(MICROBE_NAME: Enterococcus faecium)~CONSUMES~(COMPOUND: thiamine)|(MICROBE_NAME: Enterococcus faecium)~CONSUMES~(COMPOUND: riboflavin)|(MICROBE_NAME: Enterococcus faecium)~CONSUMES~(COMPOUND: niacin)
+
+
+
+
+(COMPOUND: isoflavones)~BECOMES~(COMPOUND: aglycone)
+
+
+(COMPOUND: Acetoine)~BECOMES~(COMPOUND: diacetyl)
+(COMPOUND: peptides)~BECOMES~(COMPOUND: ammonia)
+
+(MICROBE_NAME: S. cerevisiae)~PRODUCES~(COMPOUND: ethanol)|(MICROBE_NAME: S. cerevisiae)~PRODUCES~(COMPOUND: glycerol)|(MICROBE_NAME: S. cerevisiae)~PRODUCES~(COMPOUND: lactic acid)
+
+(COMPOUND: lactose)~BECOMES~(COMPOUND: lactic acid)|(COMPOUND: lactose)~BECOMES~(COMPOUND: ethanol)|(COMPOUND: lactose)~BECOMES~(COMPOUND: lactulose)
+
+
+
+
+
+(MICROBE_NAME: Limosilactobacillus reuteri)~PRODUCES~(COMPOUND: reuterin)
+(MICROBE_NAME: A. aceti)~CONSUMES~(COMPOUND: ethanol)|(MICROBE_NAME: A. aceti)~CONSUMES~(COMPOUND: glycerol)|(MICROBE_NAME: A. aceti)~CONSUMES~(COMPOUND: glucose)
+(COMPOUND: malic acid)~BECOMES~(COMPOUND: lactic acid)
+
+
+
+
+
+
+
+
+
+
+(COMPOUND: sucrose)~BECOMES~(COMPOUND: fructose)|(COMPOUND: sucrose)~BECOMES~(COMPOUND: glucose)
+(COMPOUND: glucose)~BECOMES~(COMPOUND: gluconic acid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+(COMPOUND: 1-nonanol)~CONTRIBUTES SENSORY~(SENSORY: floral)|(COMPOUND: 2-decanone)~CONTRIBUTES SENSORY~(SENSORY: floral)|(COMPOUND: 2-undecanone)~CONTRIBUTES SENSORY~(SENSORY: floral)
+(COMPOUND: phenyl aldehyde)~CONTRIBUTES SENSORY~(SENSORY: floral)|(COMPOUND: benzyl alcohol)~CONTRIBUTES SENSORY~(SENSORY: floral)
+
+(COMPOUND: threonine)~BECOMES~(COMPOUND: aminoacetone)|(COMPOUND: aminoacetone)~BECOMES~(COMPOUND: pyrazines)
+(COMPOUND: pentanedione)~BECOMES~(COMPOUND: 2-aminopentan-3-one)|(COMPOUND: 2-aminopentan-3-one)~BECOMES~(COMPOUND: pyrazine)
+(COMPOUND: Aminoacetone)~BECOMES~(COMPOUND: pyruvate)|(COMPOUND: pyruvate)~BECOMES~(COMPOUND: acetoin)
+
+
+
+
+(MICROBE_NAME: Bacillus sp.)~PRODUCES~(COMPOUND: aminocaproic acid)
+(MICROBE_NAME: Alcaligenes lactamolyticus)~PRODUCES~(COMPOUND: caproic acid)|(MICROBE_NAME: Achromobacter sp.)~PRODUCES~(COMPOUND: caproic acid)
+
+
+
+(COMPOUND: amine)~BECOMES~(COMPOUND: ammonia)
+
+
+
+
+
+
+
+(MICROBE_NAME: Oenococcus oeni)~CREATES~(PRODUCT: wine)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(MICROBE_NAME: Acetobacter aceti)~CREATES~(PRODUCT: vinegar)
+
+
+
+
+(COMPOUND: lactose)~BECOMES~(COMPOUND: lactic acid)
+
+
+
+
+
+(MICROBE_NAME: Gluconacetobacter hansenii)~PRODUCES~(COMPOUND: acetic acid)
+(MICROBE_NAME: Candida tropicalis)~CREATES~(PRODUCT: kombucha)
+(COMPOUND: ethanol)~BECOMES~(COMPOUND: acetic acid)
+
+
+
+(COMPOUND: glucose)~BECOMES~(COMPOUND: gluconic acid)
+
+
+
+
+(MICROBE_NAME: B. subtilis var. natto)~PRODUCES~(COMPOUND: pyrazines)
+(MICROBE_NAME: B. subtilis var. natto)~PRODUCES~(COMPOUND: pyrazine)
+
+(MICROBE_NAME: B. subtilis var. natto)~CONSUMES~(COMPOUND: peptide)|(MICROBE_NAME: Lpb. plantarum)~CONSUMES~(COMPOUND: peptide)
+(MICROBE_NAME: B. subtilis var. natto)~PRODUCES~(COMPOUND: ammonia)
+
+(MICROBE_NAME: Methylomonas methylovara)~PRODUCES~(COMPOUND: glutamic acid)
+(MICROBE_NAME: Aspergillus niger)~PRODUCES~(COMPOUND: citric acid)
+(MICROBE_NAME: Candida lipolytica)~PRODUCES~(COMPOUND: Citric acid)
+
+
+
+
+
+
+(COMPOUND: malic acid)~CONTRIBUTES SENSORY~(SENSORY: apple)|(COMPOUND: citric acid)~CONTRIBUTES SENSORY~(SENSORY: citric)
+(COMPOUND: acetic acid)~CONTRIBUTES SENSORY~(SENSORY: fruity)
+
+
+
+
+(COMPOUND: glucose)~BECOMES~(COMPOUND: ethanol)
