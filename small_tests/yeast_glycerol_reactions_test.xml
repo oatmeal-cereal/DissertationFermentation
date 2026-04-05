@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<ptools-xml ptools-version="29.5" xml:base="http://BioCyc.org/apixml?fn=reactions-of-compound%26id=YEAST:GLYCEROL%26detail=FULL">
+  <metadata>
+    <url>http://BioCyc.org/</url>
+    <service_name>apixml</service_name>
+    <query>fn=reactions-of-compound&amp;id=YEAST:GLYCEROL&amp;detail=FULL</query>
+    <num_results>16</num_results>
+    <PGDB orgid="YEAST" version="29.6">
+      <species datatype="string">Saccharomyces cerevisiae</species>
+      <strain datatype="string">S288c</strain>
+      <dblink>
+        <dblink-db>NCBI-TAXONOMY-DB</dblink-db>
+        <dblink-oid>559292</dblink-oid>
+        <dblink-relationship>unification</dblink-relationship>
+        <dblink-URL>http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=559292</dblink-URL>
+      </dblink>
+    </PGDB>
+  </metadata>
+  <Reaction ID="YEAST:GLYCEROL-KIN-RXN" orgid="YEAST" frameid="GLYCEROL-KIN-RXN" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">-12.095886</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL-3P" orgid="YEAST" frameid="GLYCEROL-3P"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:ADP" orgid="YEAST" frameid="ADP"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-1229" orgid="YEAST" frameid="ENZRXN3O-1229" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:GLYCEROL-KIN-RXN" orgid="YEAST" frameid="GLYCEROL-KIN-RXN"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YHL032C-MONOMER" orgid="YEAST" frameid="YHL032C-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol kinase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:ATP" orgid="YEAST" frameid="ATP"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <synonym datatype="string">Glycerokinase</synonym>
+    <synonym datatype="string">ATP:glycerol 3-phosphotransferase</synonym>
+    <in-pathway>
+      <Pathway resource="getxml?YEAST:PWY-4261-YEAST" orgid="YEAST" frameid="PWY-4261-YEAST"/>
+    </in-pathway>
+    <ec-number>EC-2.7.1.30
+      <official>T</official>
+    </ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:GLYCEROL-2-DEHYDROGENASE-NADP+-RXN" orgid="YEAST" frameid="GLYCEROL-2-DEHYDROGENASE-NADP+-RXN" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">4.3134766</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:DIHYDROXYACETONE" orgid="YEAST" frameid="DIHYDROXYACETONE"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:NADPH" orgid="YEAST" frameid="NADPH"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-14537" orgid="YEAST" frameid="ENZRXN3O-14537" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:GLYCEROL-2-DEHYDROGENASE-NADP+-RXN" orgid="YEAST" frameid="GLYCEROL-2-DEHYDROGENASE-NADP+-RXN"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YOR120W-MONOMER" orgid="YEAST" frameid="YOR120W-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol 2-dehydrogenase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:NADP" orgid="YEAST" frameid="NADP"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <credits>
+      <imported-from-meta>
+        <date datatype="date">2019-04-23</date>
+        <Person ID="YEAST:caspi" orgid="YEAST" frameid="caspi" detail="full">
+          <email datatype="string">caspi@ai.sri.com</email>
+          <affiliations>
+            <Organization ID="YEAST:SRI" orgid="YEAST" frameid="SRI" detail="full">
+              <email datatype="string">ptools-support@ai.sri.com</email>
+              <abbrev-name datatype="string">SRI International</abbrev-name>
+              <url datatype="string">http://bioinformatics.ai.sri.com/</url>
+              <common-name datatype="string">SRI International</common-name>
+            </Organization>
+          </affiliations>
+          <common-name datatype="string">Ron Caspi</common-name>
+        </Person>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-1.1.1.156
+      <official>T</official>
+    </ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-11382" orgid="YEAST" frameid="RXN-11382" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>RIGHT-TO-LEFT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">4.013489</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:L-GLYCERALDEHYDE" orgid="YEAST" frameid="L-GLYCERALDEHYDE"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:NADPH" orgid="YEAST" frameid="NADPH"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-14539" orgid="YEAST" frameid="ENZRXN3O-14539" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-11382" orgid="YEAST" frameid="RXN-11382"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-29918-MONOMER" orgid="YEAST" frameid="G3O-29918-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">L glyceraldehyde reductase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:NADP" orgid="YEAST" frameid="NADP"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <credits>
+      <created>
+        <date datatype="date">2010-04-13</date>
+        <Person ID="YEAST:fulcher" orgid="YEAST" frameid="fulcher" detail="full">
+          <email datatype="string">fulcher@ai.sri.com</email>
+          <middle-name datatype="string">A</middle-name>
+          <affiliations>
+            <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+          </affiliations>
+          <common-name datatype="string">Carol Fulcher</common-name>
+        </Person>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2019-05-09</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-1.1.1.372
+      <official>T</official>
+    </ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:GLYCEROL-DEHYDROGENASE-NADP+-RXN" orgid="YEAST" frameid="GLYCEROL-DEHYDROGENASE-NADP+-RXN" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>REVERSIBLE</reaction-direction>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCERALD" orgid="YEAST" frameid="GLYCERALD"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:NADPH" orgid="YEAST" frameid="NADPH"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-14540" orgid="YEAST" frameid="ENZRXN3O-14540" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:GLYCEROL-DEHYDROGENASE-NADP+-RXN" orgid="YEAST" frameid="GLYCEROL-DEHYDROGENASE-NADP+-RXN"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-29918-MONOMER" orgid="YEAST" frameid="G3O-29918-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">D glyceraldehyde reductase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:NADP" orgid="YEAST" frameid="NADP"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <credits>
+      <imported-from-meta>
+        <date datatype="date">2019-05-10</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-1.1.1.372
+      <official>T</official>
+    </ec-number>
+    <ec-number>EC-1.1.1.72
+      <official>T</official>
+    </ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:TRANS-RXN-131" orgid="YEAST" frameid="TRANS-RXN-131" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:TR-11" orgid="YEAST" frameid="TR-11" class="true"/>
+    </parent>
+    <reaction-direction>REVERSIBLE</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">0.0
+      <evidence>
+        <Evidence-Code ID="YEAST:EV-COMP" orgid="YEAST" frameid="EV-COMP" detail="full" class="true">
+          <comment datatype="string">Inferred from computation.  The evidence for an assertion comes from a
+computational analysis.  The assertion itself might have been made
+by a person or by a computer, that is, EV-COMP does not specify whether
+manual interpretation of the computation occurred.
+&lt;p&gt;
+</comment>
+          <common-name datatype="string">Inferred by computational analysis</common-name>
+        </Evidence-Code>
+        <Publication ID="YEAST:PUB-LATENDRESSE2013" orgid="YEAST" frameid="PUB-LATENDRESSE2013" detail="full">
+          <author datatype="string">Latendresse M.</author>
+          <title datatype="string">Computing Gibbs Free Energy of Compounds and Reactions in MetaCyc.</title>
+          <url datatype="string">http://www.biocyc.org/PGDBConceptsGuide.shtml#gibbs</url>
+          <year datatype="integer">2013</year>
+        </Publication>
+      </evidence>
+    </gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+      <compartment>
+        <cco resource="getxml?YEAST:CCO-IN" orgid="YEAST" frameid="CCO-IN"/>
+      </compartment>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-16491" orgid="YEAST" frameid="ENZRXN3O-16491" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:TRANS-RXN-131" orgid="YEAST" frameid="TRANS-RXN-131"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-30412-MONOMER" orgid="YEAST" frameid="G3O-30412-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol channel</common-name>
+      </Enzymatic-Reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-16489" orgid="YEAST" frameid="ENZRXN3O-16489" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:TRANS-RXN-131" orgid="YEAST" frameid="TRANS-RXN-131"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:CPLX3O-10933" orgid="YEAST" frameid="CPLX3O-10933"/>
+        </enzyme>
+        <common-name datatype="string">glycerol uptake/efflux facilitator protein FPS1</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+      <compartment>
+        <cco resource="getxml?YEAST:CCO-OUT" orgid="YEAST" frameid="CCO-OUT"/>
+      </compartment>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <synonym datatype="string">glycerol transport</synonym>
+    <credits>
+      <imported-from-meta>
+        <date datatype="date">2021-01-27</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+  </Reaction>
+  <Reaction ID="YEAST:TRANS-RXN3O-455" orgid="YEAST" frameid="TRANS-RXN3O-455" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Transport-Reactions" orgid="YEAST" frameid="Transport-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>LEFT-TO-RIGHT</reaction-direction>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+      <compartment>
+        <cco resource="getxml?YEAST:CCO-IN" orgid="YEAST" frameid="CCO-IN"/>
+      </compartment>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+      <compartment>
+        <cco resource="getxml?YEAST:CCO-IN" orgid="YEAST" frameid="CCO-IN"/>
+      </compartment>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-16291" orgid="YEAST" frameid="ENZRXN3O-16291" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:TRANS-RXN3O-455" orgid="YEAST" frameid="TRANS-RXN3O-455"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-34082-MONOMER" orgid="YEAST" frameid="G3O-34082-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol:proton symporter</common-name>
+      </Enzymatic-Reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-16449" orgid="YEAST" frameid="ENZRXN3O-16449" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:TRANS-RXN3O-455" orgid="YEAST" frameid="TRANS-RXN3O-455"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-30046-MONOMER" orgid="YEAST" frameid="G3O-30046-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol:proton symporter</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+      <compartment>
+        <cco resource="getxml?YEAST:CCO-OUT" orgid="YEAST" frameid="CCO-OUT"/>
+      </compartment>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+      <compartment>
+        <cco resource="getxml?YEAST:CCO-OUT" orgid="YEAST" frameid="CCO-OUT"/>
+      </compartment>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <credits>
+      <created>
+        <date datatype="date">2019-05-22</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </created>
+    </credits>
+    <common-name datatype="string">glycerol:proton symport</common-name>
+  </Reaction>
+  <Reaction ID="YEAST:3.1.1.23-RXN" orgid="YEAST" frameid="3.1.1.23-RXN" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">66.41072</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:Fatty-Acids" orgid="YEAST" frameid="Fatty-Acids" class="true"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-11582" orgid="YEAST" frameid="ENZRXN3O-11582" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:3.1.1.23-RXN" orgid="YEAST" frameid="3.1.1.23-RXN"/>
+        </reaction>
+        <synonym datatype="string">monoacylglycerol hydrolase</synonym>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-32893-MONOMER" orgid="YEAST" frameid="G3O-32893-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">monoacylglycerol lipase</common-name>
+      </Enzymatic-Reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN-22365" orgid="YEAST" frameid="ENZRXN-22365" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:3.1.1.23-RXN" orgid="YEAST" frameid="3.1.1.23-RXN"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-31885-MONOMER" orgid="YEAST" frameid="G3O-31885-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">monoacylglycerol lipase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:1-Acyl-sn-glycerols" orgid="YEAST" frameid="1-Acyl-sn-glycerols" class="true"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <credits>
+      <imported-from-meta>
+        <date datatype="date">2013-11-20</date>
+        <Person ID="YEAST:hartmut" orgid="YEAST" frameid="hartmut" detail="full">
+          <credits>
+            <imported-from-meta>
+              <date datatype="date">2012-10-17</date>
+              <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+              <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+            </imported-from-meta>
+          </credits>
+          <affiliations>
+            <Organization ID="YEAST:O-28" orgid="YEAST" frameid="O-28" detail="full">
+              <abbrev-name datatype="string">Boyce Thompson Institute</abbrev-name>
+              <url datatype="string">http://bti.cornell.edu/</url>
+              <credits>
+                <imported-from-nil>
+                  <date datatype="date">2012-06-11</date>
+                  <Person ID="YEAST:ong" orgid="YEAST" frameid="ong" detail="full">
+                    <credits>
+                      <imported-from-nil>
+                        <date datatype="date">2012-06-11</date>
+                        <Person resource="#YEAST:ong" orgid="YEAST" frameid="ong"/>
+                        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+                      </imported-from-nil>
+                    </credits>
+                    <affiliations>
+                      <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+                    </affiliations>
+                  </Person>
+                  <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+                </imported-from-nil>
+              </credits>
+              <common-name datatype="string">Boyce Thompson Institute for Plant Research</common-name>
+            </Organization>
+            <Organization ID="YEAST:THE-ARABIDOPSIS-INFORMATION-RESOURCE" orgid="YEAST" frameid="THE-ARABIDOPSIS-INFORMATION-RESOURCE" detail="full">
+              <abbrev-name datatype="string">TAIR</abbrev-name>
+              <common-name datatype="string">The Arabidopsis Information Resource</common-name>
+            </Organization>
+          </affiliations>
+          <common-name datatype="string">Hartmut Foerster</common-name>
+        </Person>
+        <Organization resource="#YEAST:O-28" orgid="YEAST" frameid="O-28"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.1.23
+      <official>T</official>
+    </ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-18935" orgid="YEAST" frameid="RXN-18935" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">-5.4871826</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:ARACHIDONIC_ACID" orgid="YEAST" frameid="ARACHIDONIC_ACID"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <left>
+      <Compound resource="getxml?YEAST:CPD-12600" orgid="YEAST" frameid="CPD-12600"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <credits>
+      <created>
+        <date datatype="date">2017-07-28</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2019-04-23</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.1.23</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:CARDIOLIPSYN-RXN" orgid="YEAST" frameid="CARDIOLIPSYN-RXN" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <gibbs-0 datatype="float" units="kcal/mol">78.82483</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:CARDIOLIPIN" orgid="YEAST" frameid="CARDIOLIPIN" class="true"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-1637" orgid="YEAST" frameid="ENZRXN3O-1637" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:CARDIOLIPSYN-RXN" orgid="YEAST" frameid="CARDIOLIPSYN-RXN"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YDL142C-MONOMER" orgid="YEAST" frameid="YDL142C-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">cardiolipin synthase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:L-1-PHOSPHATIDYL-GLYCEROL" orgid="YEAST" frameid="L-1-PHOSPHATIDYL-GLYCEROL" class="true"/>
+      <coefficient datatype="integer">2</coefficient>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <ec-number>EC-2.7.8.41</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-7952" orgid="YEAST" frameid="RXN-7952" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">66.41072</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:Fatty-Acids" orgid="YEAST" frameid="Fatty-Acids" class="true"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-13109" orgid="YEAST" frameid="ENZRXN3O-13109" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-7952" orgid="YEAST" frameid="RXN-7952"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-31885-MONOMER" orgid="YEAST" frameid="G3O-31885-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">acylglycerol lipase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:CPD-409" orgid="YEAST" frameid="CPD-409" class="true"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <in-pathway>
+      <Pathway resource="getxml?YEAST:LIPAS-PWY" orgid="YEAST" frameid="LIPAS-PWY"/>
+    </in-pathway>
+    <credits>
+      <created>
+        <date datatype="date">2011-06-14</date>
+        <Organization ID="YEAST:PMN" orgid="YEAST" frameid="PMN" detail="full">
+          <abbrev-name datatype="string">PMN</abbrev-name>
+          <url datatype="string">http://plantcyc.org</url>
+          <credits>
+            <imported-from-nil>
+              <date datatype="date">2012-06-11</date>
+              <Person resource="#YEAST:ong" orgid="YEAST" frameid="ong"/>
+              <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+            </imported-from-nil>
+          </credits>
+          <common-name datatype="string">Carnegie Institution for Science</common-name>
+        </Organization>
+        <Person ID="YEAST:dreher" orgid="YEAST" frameid="dreher" detail="full">
+          <email datatype="string">kadreher@tairgroup.org</email>
+          <middle-name datatype="string">A</middle-name>
+          <affiliations>
+            <Organization resource="#YEAST:THE-ARABIDOPSIS-INFORMATION-RESOURCE" orgid="YEAST" frameid="THE-ARABIDOPSIS-INFORMATION-RESOURCE"/>
+          </affiliations>
+          <common-name datatype="string">Kate Dreher</common-name>
+        </Person>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2019-04-23</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.1.23
+      <official>T</official>
+    </ec-number>
+    <ec-number>EC-3.1.1.79</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-14073" orgid="YEAST" frameid="RXN-14073" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">1.6887207</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL-3P" orgid="YEAST" frameid="GLYCEROL-3P"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROPHOSPHOGLYCEROL" orgid="YEAST" frameid="GLYCEROPHOSPHOGLYCEROL"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <credits>
+      <created>
+        <date datatype="date">2013-01-21</date>
+        <Person ID="YEAST:kothari" orgid="YEAST" frameid="kothari" detail="full">
+          <email datatype="string">kothari@ai.sri.com</email>
+          <affiliations>
+            <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+          </affiliations>
+          <common-name datatype="string">Anamika Kothari</common-name>
+        </Person>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2015-11-23</date>
+        <Person ID="YEAST:paley" orgid="YEAST" frameid="paley" detail="full">
+          <email datatype="string">paley@ai.sri.com</email>
+          <credits>
+            <imported-from-meta>
+              <date datatype="date">2012-06-11</date>
+              <Person resource="#YEAST:ong" orgid="YEAST" frameid="ong"/>
+              <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+            </imported-from-meta>
+          </credits>
+          <affiliations>
+            <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+          </affiliations>
+          <common-name datatype="string">Suzanne Paley</common-name>
+        </Person>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.4.46</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-14965" orgid="YEAST" frameid="RXN-14965" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">4.4970093</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:Pi" orgid="YEAST" frameid="Pi"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-14478" orgid="YEAST" frameid="ENZRXN3O-14478" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-14965" orgid="YEAST" frameid="RXN-14965"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YIL053W-MONOMER" orgid="YEAST" frameid="YIL053W-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol-1-phosphatase</common-name>
+      </Enzymatic-Reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-13626" orgid="YEAST" frameid="ENZRXN3O-13626" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-14965" orgid="YEAST" frameid="RXN-14965"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YER062C-MONOMER" orgid="YEAST" frameid="YER062C-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol-1-phosphatase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:GLYCEROL-3P" orgid="YEAST" frameid="GLYCEROL-3P"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <credits>
+      <created>
+        <date datatype="date">2013-10-02</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2015-11-23</date>
+        <Person resource="#YEAST:paley" orgid="YEAST" frameid="paley"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.3.21</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-14964" orgid="YEAST" frameid="RXN-14964" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">4.4970093</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:Pi" orgid="YEAST" frameid="Pi"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-13823" orgid="YEAST" frameid="ENZRXN3O-13823" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-14964" orgid="YEAST" frameid="RXN-14964"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YIL053W-MONOMER" orgid="YEAST" frameid="YIL053W-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol-1-phosphatase</common-name>
+      </Enzymatic-Reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-13625" orgid="YEAST" frameid="ENZRXN3O-13625" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-14964" orgid="YEAST" frameid="RXN-14964"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YER062C-MONOMER" orgid="YEAST" frameid="YER062C-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol-1-phosphatase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:SN-GLYCEROL-1-PHOSPHATE" orgid="YEAST" frameid="SN-GLYCEROL-1-PHOSPHATE"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <orphan>NO</orphan>
+    <credits>
+      <created>
+        <date datatype="date">2013-10-02</date>
+        <Person resource="#YEAST:caspi" orgid="YEAST" frameid="caspi"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2015-11-23</date>
+        <Person resource="#YEAST:paley" orgid="YEAST" frameid="paley"/>
+        <Organization resource="#YEAST:SRI" orgid="YEAST" frameid="SRI"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.3.21</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-15088" orgid="YEAST" frameid="RXN-15088" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">-5.487152</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:OLEATE-CPD" orgid="YEAST" frameid="OLEATE-CPD"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN-22370" orgid="YEAST" frameid="ENZRXN-22370" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-15088" orgid="YEAST" frameid="RXN-15088"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-31885-MONOMER" orgid="YEAST" frameid="G3O-31885-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">2-oleoylglycerol lipase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:CPD0-1812" orgid="YEAST" frameid="CPD0-1812"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <in-pathway>
+      <Pathway resource="getxml?YEAST:PWY-7420" orgid="YEAST" frameid="PWY-7420"/>
+    </in-pathway>
+    <credits>
+      <created>
+        <date datatype="date">2013-11-21</date>
+        <Person resource="#YEAST:hartmut" orgid="YEAST" frameid="hartmut"/>
+        <Organization resource="#YEAST:O-28" orgid="YEAST" frameid="O-28"/>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2013-11-27</date>
+        <Person resource="#YEAST:hartmut" orgid="YEAST" frameid="hartmut"/>
+        <Organization resource="#YEAST:O-28" orgid="YEAST" frameid="O-28"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.1.23</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:RXN-15089" orgid="YEAST" frameid="RXN-15089" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">-5.487152</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:OLEATE-CPD" orgid="YEAST" frameid="OLEATE-CPD"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:PROTON" orgid="YEAST" frameid="PROTON"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-11583" orgid="YEAST" frameid="ENZRXN3O-11583" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-15089" orgid="YEAST" frameid="RXN-15089"/>
+        </reaction>
+        <synonym datatype="string">1-oleoyl-&lt;i&gt;sn&lt;/i&gt;-glycerol hydrolase</synonym>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-32893-MONOMER" orgid="YEAST" frameid="G3O-32893-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">1-oleoylglycerol lipase</common-name>
+      </Enzymatic-Reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN-22369" orgid="YEAST" frameid="ENZRXN-22369" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:RXN-15089" orgid="YEAST" frameid="RXN-15089"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:G3O-31885-MONOMER" orgid="YEAST" frameid="G3O-31885-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">1-oleoylglycerol lipase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:CPD-11690" orgid="YEAST" frameid="CPD-11690"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <in-pathway>
+      <Pathway resource="getxml?YEAST:PWY-7420" orgid="YEAST" frameid="PWY-7420"/>
+    </in-pathway>
+    <credits>
+      <created>
+        <date datatype="date">2013-11-21</date>
+        <Person resource="#YEAST:hartmut" orgid="YEAST" frameid="hartmut"/>
+        <Organization resource="#YEAST:O-28" orgid="YEAST" frameid="O-28"/>
+      </created>
+      <imported-from-meta>
+        <date datatype="date">2013-11-27</date>
+        <Person resource="#YEAST:hartmut" orgid="YEAST" frameid="hartmut"/>
+        <Organization resource="#YEAST:O-28" orgid="YEAST" frameid="O-28"/>
+      </imported-from-meta>
+    </credits>
+    <ec-number>EC-3.1.1.23</ec-number>
+  </Reaction>
+  <Reaction ID="YEAST:GLYCEROL-1-PHOSPHATASE-RXN" orgid="YEAST" frameid="GLYCEROL-1-PHOSPHATASE-RXN" detail="full">
+    <parent>
+      <Reaction resource="getxml?YEAST:Chemical-Reactions" orgid="YEAST" frameid="Chemical-Reactions" class="true"/>
+    </parent>
+    <parent>
+      <Reaction resource="getxml?YEAST:Small-Molecule-Reactions" orgid="YEAST" frameid="Small-Molecule-Reactions" class="true"/>
+    </parent>
+    <reaction-direction>PHYSIOL-LEFT-TO-RIGHT</reaction-direction>
+    <gibbs-0 datatype="float" units="kcal/mol">4.4969482</gibbs-0>
+    <right>
+      <Compound resource="getxml?YEAST:Pi" orgid="YEAST" frameid="Pi"/>
+    </right>
+    <right>
+      <Compound resource="getxml?YEAST:GLYCEROL" orgid="YEAST" frameid="GLYCEROL"/>
+    </right>
+    <enzymatic-reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-1264" orgid="YEAST" frameid="ENZRXN3O-1264" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:GLYCEROL-1-PHOSPHATASE-RXN" orgid="YEAST" frameid="GLYCEROL-1-PHOSPHATASE-RXN"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YIL053W-MONOMER" orgid="YEAST" frameid="YIL053W-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol-1-phosphatase</common-name>
+      </Enzymatic-Reaction>
+      <Enzymatic-Reaction ID="YEAST:ENZRXN3O-1080" orgid="YEAST" frameid="ENZRXN3O-1080" detail="low">
+        <reaction>
+          <Reaction resource="#YEAST:GLYCEROL-1-PHOSPHATASE-RXN" orgid="YEAST" frameid="GLYCEROL-1-PHOSPHATASE-RXN"/>
+        </reaction>
+        <enzyme>
+          <Protein resource="getxml?YEAST:YER062C-MONOMER" orgid="YEAST" frameid="YER062C-MONOMER"/>
+        </enzyme>
+        <common-name datatype="string">glycerol-1-phosphatase</common-name>
+      </Enzymatic-Reaction>
+    </enzymatic-reaction>
+    <left>
+      <Compound resource="getxml?YEAST:Glycerol-1-phosphate" orgid="YEAST" frameid="Glycerol-1-phosphate" class="true"/>
+    </left>
+    <left>
+      <Compound resource="getxml?YEAST:WATER" orgid="YEAST" frameid="WATER"/>
+    </left>
+    <physiologically-relevant datatype="boolean">true</physiologically-relevant>
+    <in-pathway>
+      <Pathway resource="getxml?YEAST:PWY3O-48" orgid="YEAST" frameid="PWY3O-48"/>
+    </in-pathway>
+    <ec-number>EC-3.1.3.21
+      <official>T</official>
+    </ec-number>
+  </Reaction>
+</ptools-xml>

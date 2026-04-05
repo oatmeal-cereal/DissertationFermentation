@@ -5,12 +5,6 @@ from xml.etree import ElementTree as ET
 import random
 import time
 
-sentence = 'it has been shown that S. cerevisiae could grow in milk and produce small amounts of ethanol, glycerol, and lactic acid'
-
-microbes = ['Saccharomyces cerevisiae']
-
-compounds = ['glycerol', 'butyric acid']
-
 with open('..\\..\\dissertation DLC content\\go away\\passwords.json', 'r') as f:
     passwords = json.load(f)
     password = passwords.get('metacyc_pw')
@@ -30,73 +24,154 @@ def process_comp(comp):
         comp = comp.replace(char, '')
     return comp
 
+microbes = ['Saccharomyces cerevisiae', 'Lactococcus lactis', 'Lactiplantibacillus plantarum', 'Oenococcus oeni', 'Clostridium butyricum']
+#microbes = ['Saccharomyces cerevisiae']
+
+#compounds = ['glycerol', 'butyric acid', 'lactic acid', 'lactate', 'malic acid', 'r-lactic acid']
+""" compounds = {
+    'Saccharomyces cerevisiae': ['glycerol', 'glucose', 'acetic acid'],
+    'Lactococcus lactis': ['lactic acid', 'lactate', 'r-lactic acid'],
+    'Lactiplantibacillus plantarum': ['lactic acid', 'lactate', 'r-lactic acid'],
+    'Oenococcus oeni': ['malic acid', 'l-malic acid', 'l-malate', 'r-lactic acid', 'lactate'],
+    'Clostridium butyricum': ['butyric acid', 'lactate', 'acetate', 'lactic acid']
+} """
+
+compounds = {
+    #'Saccharomyces cerevisiae': ['glycerol', 'acetic acid', 'glucose'],
+    #'Lactococcus lactis': ['r-lactic acid', 'lactate'],
+    'Oenococcus oeni': ['r-lactic acid', 'r-lactate']
+}
+
+results = []
+
+logs = []
+
+def process_log(log):
+    print(log)
+    logs.append(log + '\n')
+
+#microbe index and name
 for microbe in microbes:
-    for comp in compounds:
-        dbs = db_mappings[microbe]
+    mic_chems = compounds.get(microbe)
+    if not mic_chems:
+        continue
+    for chem in mic_chems:
+        dbs = db_mappings.get(microbe)
+        if not dbs:
+            process_log('database not found for: {microbe}')
+            continue
         if len(dbs) == 1:
             db_values = dbs.values()
             database = list(db_values)[0]
         else:
             db_values = dbs.values()
             database = random.choice(list(db_values))
-        comp = process_comp(comp)
-        comp_resp = session.get(f'https://websvc.biocyc.org/{database}/name-search?object={comp}&class=Compounds&fmt=json').json()
 
-        if not comp_resp.get('RESULTS'):
+        process_log(f"microbe name: {microbe}, chemical name: {chem}")
+        process_log(f'database id: {database}')
+
+        chem = process_comp(chem)
+        chem_resp = session.get(f'https://websvc.biocyc.org/{database}/name-search?object={chem}&class=Compounds&fmt=json').json()
+
+        if not chem_resp.get('RESULTS'):
+            process_log(f"no chemical name found under microbe {microbe}")
             continue
         
-        comp_resp = comp_resp.get('RESULTS')[0]
+        chem_resp = chem_resp.get('RESULTS')[0]
         
         time.sleep(1)
         
-        comp_id = comp_resp.get('OBJECT-ID')
+        chem_id = chem_resp.get('OBJECT-ID')
 
-        utilisation = session.get(f'https://websvc.biocyc.org/getxml?{database}:{comp_id}&fmt=json')
-        
-        util_xml = ET.fromstring(utilisation.text).find('Compound')
-        
-        lefts = util_xml.find('appears-in-left-side-of')
-        
-        if not lefts == None:
-            #add a relation that the microbe consumes the chemical as a substrate
-            for reaction in lefts:
-                reaction_id = reaction.get('frameid')
-                print("reaction:", reaction_id)
+        if not chem_id:
+            continue
 
-                enzymes_resp = session.get(f"https://websvc.biocyc.org/apixml?fn=enzymes-of-reaction&id={database}:{reaction_id}")
+        try:
+            process_log(f"trying: {database}, {chem}, {chem_id}")
+            chem_reactions_resp = session.get(f"https://websvc.biocyc.org/apixml?fn=reactions-of-compound&id={database}:{chem_id}&detail=full")
+            time.sleep(1)
+        except:
+            print("failed")
+            continue
 
-                time.sleep(1)
+        try:
+            reactions_xml = ET.fromstring(chem_reactions_resp.text)
+        except:
+            process_log(f"failed chemical: {chem}")
+            print(chem_reactions_resp.reason)
+            continue
 
-                enzymes_xml = ET.fromstring(enzymes_resp.text)
+        reactions = reactions_xml.findall('Reaction')
 
-                proteins = enzymes_xml.findall('Protein')
+        if not reactions:
+            process_log(f"no reactions found for {microbe} and {chem}")
+            continue
 
-                for protein in proteins:
+        left_found = right_found = False
 
-                    print(protein.find('common-name').text)
-                    print(protein.get('frameid'))
+        for reaction in reactions:
+            enzrxns = reaction.find('enzymatic-reaction')
+            try:
+                enzs = enzrxns.findall('Enzymatic-Reaction')
+                enzymes = []
+                for enz in enzs:
+                    if enz.find('common-name'):
+                        enzymes.append(enz.find('common-name'))
+                process_log(f"enzymes: {enzymes}")
+            except:
+                process_log(f"{enzrxns} has no reactions")
+                continue
 
-                    """ enzreactions = protein.find('catalyzes')
-                    for reaction in enzreactions:
-                        enzyme_id = reaction.find('enzyme').find('Protein').get('frameid')
+            direction = reaction.findtext('reaction-direction')
 
-                        name_resp = session.get(f'https://websvc.biocyc.org/getxml?{database}:{enzyme_id}')
+            if not direction:
+                direction = 'LEFT-TO-RIGHT'
 
-                        name_xml = ET.fromstring(name_resp.text)
+            def get_left_right_ids(direction):
+                lr_ids = []
+                for lr in reaction.findall(direction):
+                    try:
+                        lr_ids.append(lr.find('Compound').get('frameid'))
+                    except:
+                        process_log(f"what the hell kind of compound wouldnt have a frameid huh?? oh, {lr.find('Compound')}")
+                return lr_ids
+            
+            left_label = right_label = None
+            
+            if 'LEFT-TO-RIGHT' in direction or direction == 'REVERSIBLE':
+                left_label = 'left'
+                right_label = 'right'
+                left_ids = get_left_right_ids('left')
+                right_ids = get_left_right_ids('right')
+            elif 'RIGHT-TO-LEFT' in direction:
+                left_label = 'right'
+                right_label = 'left'
+                left_ids = get_left_right_ids('right')
+                right_ids = get_left_right_ids('left')
+            else:
+                continue
 
-                        print(name_xml.find('Protein').find('common-name').text)
+            process_log(f'left: {left_ids}')
+            process_log(f'right: {right_ids}')
 
-                        time.sleep(1) """
+            if chem_id in left_ids:
+                left_found = True
+                
+            if chem_id in right_ids:
+                right_found = True
+                
+        if left_found:
+            results.append((microbe, 'CONSUMES', chem))
+            process_log('chemical appears on the left side, must be consumed')
 
-                print()
-        
-        rights = util_xml.find('appears-in-right-side-of')
-        
-        if not rights == None:
-            #add a relation that the microbe produces this metabolite
-            pass
-        
-        """ for right in rights:
-            print(right.get('frameid')) """
-        
+        if right_found:
+            results.append((microbe, 'PRODUCES', chem))
+            process_log('chemical appears on the right side, must be produced')
+
         time.sleep(1)
+
+with open('biocyc_small_test_results_2.json', 'w', encoding='utf-8') as f:
+    json.dump(results, f)
+
+with open('biocyc_small_test_logs_2.json', 'w') as f:
+    json.dump(logs, f)

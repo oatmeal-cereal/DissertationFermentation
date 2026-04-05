@@ -9,8 +9,6 @@ biocyc.set_organism(random_db)
 
 o = biocyc.find_compound_by_name('d-lactate')
 
-print(o)
-
 with open('..\\..\\dissertation DLC content\\go away\\passwords.json', 'r') as f:
     passwords = json.load(f)
     password = passwords.get('metacyc_pw')
@@ -29,6 +27,8 @@ print(xml_resp.findall('species')) """
 
 #response = requests.get("https://websvc.biocyc.org/xmlquery?[x:y<-dbs, x<-y^^compounds, x^name=\"lactic acid\"]")
 
-response = session.get(f"https://websvc.biocyc.org/apixml?fn=get-class-all-instances&id={random_db}:Compounds&detail=none")
+#response = session.get(f"https://websvc.biocyc.org/apixml?fn=get-class-all-instances&id={random_db}:Compounds&detail=none")
+
+response = session.get(f"https://websvc.biocyc.org/apixml?fn=reactions-of-compound&id=GCF_003627395:Lactate&detail=low")
 
 print(response.text)

@@ -1,0 +1,16 @@
+Saccharomyces cerevisiae produces ethanol
+Saccharomyces cerevisiae produces acetic acid
+Saccharomyces cerevisiae produces acetoin
+Saccharomyces cerevisiae consumes glucose
+Candida utilis consumes xylitol
+Oenococcus oeni consumes malic acid
+Lactococcus lactis produces lactic acid
+Lactococcus lactis produces diacetyl
+(all LAB consume lactose and produce lactic acid)
+Clostridium butyricum produces butyric acid
+Clostridium butyricum consumes acetate
+Clostridium butyricum consumes lactate
+Candida zemplinina consumes fructose
+Enterococcus faecium consumes riboflavin
+Gluconobacter oxydans consumes urea
+Gluconobacter oxydans consumes sulfate
