@@ -1,6 +1,8 @@
 Saccharomyces cerevisiae produces ethanol
 Saccharomyces cerevisiae produces acetic acid
 Saccharomyces cerevisiae produces acetoin
+Saccharomyces cerevisiae produces lactic acid
+Saccharomyces cerevisiae produces acetaldehyde
 Saccharomyces cerevisiae consumes glucose
 Candida utilis consumes xylitol
 Oenococcus oeni consumes malic acid
@@ -14,3 +16,13 @@ Candida zemplinina consumes fructose
 Enterococcus faecium consumes riboflavin
 Gluconobacter oxydans consumes urea
 Gluconobacter oxydans consumes sulfate
+Fructilactobacillus sanfranciscensis produces citrate
+Fructilactobacillus sanfranciscensis consumes citrate
+Latilactobacillus sakei produces acetoin
+Latilactobacillus sakei produces acetaldehyde
+Latilactobacillus sakei produces diacetyl
+Weissella confusa produces acetoin
+Weissella confusa acetaldehyde
+Weissella confusa produces ethanol
+Weissella confusa consumes glucose (and other sugars)
+Lactobacillus fermentum produces ethanol

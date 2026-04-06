@@ -2,7 +2,19 @@ from xml.etree import ElementTree as ET
 
 file = ET.parse('yeast_glycerol_reactions_test.xml')
 
-reactions = file.findall('Reaction')
+reactions = list(file.iter('Reaction'))
+
+lefts = [reaction.findall('Compound') for reaction in reactions]
+
+print([el.get('frameid') for el in file.iter() if el.tag == 'Compound'])
+
+results_type_shit = {"RESULTS":[{"OBJECT-ID":"CPD-24843","COMMON-NAME":"(R)-lactic acid"},{"OBJECT-ID":"D-LACTATE","COMMON-NAME":"(R)-lactate"}]}
+
+print()
+
+""" for element in file.iter():
+    if element.tag == 'Compound':
+        print(element) """
 
 for reaction in reactions:
     enzrxns = reaction.find('enzymatic-reaction')
@@ -17,14 +29,12 @@ for reaction in reactions:
 
     #print(enzyme_names)
 
-    print(reaction.keys())
-
-    direction = reaction.findtext('reaction-direction')
+    """ direction = reaction.findtext('reaction-direction')
     if direction:
         print("yes")
         print(direction)
     else:
-        print("no")
+        print("no") """
 
     left_ids = [left.find('Compound').get('frameid') for left in reaction.findall('left')]
     right_ids = [right.find('Compound').get('frameid') for right in reaction.findall('right')]
