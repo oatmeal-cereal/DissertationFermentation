@@ -169,11 +169,6 @@ if response.status_code == 200:
         paper_link = None
 
         #also want to skip papers like 'letter to the editor' or 'retraction note'
-
-        #some results are updates or corrections to a previous paper, indicated by 'correction to:', skip these
-        updated = paper.get('update-to')
-        if updated:
-            continue
         
         wl_tdm_publisher = False
         tdm_license = None

@@ -1,7 +1,7 @@
 import requests
 
-#test_microbes = ['S. cerevisiae', 'Lactobacillus acidophilus', 'Lactobacillus brevis', 'Levilactobacillus brevis', 'Lacticaseibacillus casei', 'Lactobacillus casei', 'Lentilactobacillus hilgardii', 'Lactobacillus hilgardii']
-test_microbes = ['Levilactobacillus brevis', 'Lacticaseibacillus casei', 'Lactobacillus casei', 'Streptomyces fragilis', 'Lactobacillus hilgardii']
+test_microbes = ['S. cerevisiae', 'Lactobacillus acidophilus', 'Lactobacillus brevis', 'Levilactobacillus brevis', 'Lacticaseibacillus casei', 'Lactobacillus casei', 'Lentilactobacillus hilgardii', 'Lactobacillus hilgardii']
+#test_microbes = ['Levilactobacillus brevis', 'Lacticaseibacillus casei', 'Lactobacillus casei', 'Streptomyces fragilis', 'Lactobacillus hilgardii']
 
 for mic in test_microbes:
     print(mic)

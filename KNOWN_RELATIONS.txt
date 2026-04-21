@@ -3,7 +3,10 @@ Saccharomyces cerevisiae produces acetic acid
 Saccharomyces cerevisiae produces acetoin
 Saccharomyces cerevisiae produces lactic acid
 Saccharomyces cerevisiae produces acetaldehyde
+Saccharomyces cerevisiae produces methanol
+Saccharomyces cerevisiae produces l-ascorbate
 Saccharomyces cerevisiae consumes glucose
+Saccharomyces cerevisiae consumes citrate
 Candida utilis consumes xylitol
 Oenococcus oeni consumes malic acid
 Lactococcus lactis produces lactic acid
