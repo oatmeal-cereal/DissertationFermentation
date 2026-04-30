@@ -47,7 +47,7 @@ elsevier_headers = headers.copy()
 elsevier_headers.update({'X-ELS-APIKey': els_api_key})
 
 params = {
-    'query': 'food fermentation',
+    'query': 'lactose fermentation',
     'select': 'title,DOI,assertion,link,update-to,license,author,container-title,volume,published',
     'sample': 100,
     'filter': 'has-full-text:true'
@@ -152,7 +152,8 @@ def download_full_text(url, paperdoi, contenttype):
                 doc_text = doc_data.get('originalText', '')
                 if 'FULL-TEXT' in doc_text:
                     print('full text baybeeee')
-                    doi_doc.write(os.getcwd(), filename)
+                    #doi_doc.write(os.getcwd(), filename)
+                    doi_doc.write(filename)
                     success = True
     return success
 
@@ -262,12 +263,12 @@ if response.status_code == 200:
             #in the bibliography of papers included in the text mining activity, i want to group papers by license, because i am required to provide a link to the license
             for license_link, license_type in whitelisted_tdm_licenses.items():
                 if license_link in tdm_license:
-                    with codecs.open(f'{str(license_type)}.bib', 'a', encoding='utf-8', errors='ignore') as f:
+                    with open(f'{str(license_type)}.bib', 'a', encoding='utf-8', errors='ignore') as f:
                         bib_data.to_file(f)
                     bibli_success = True
                     break
             if not bibli_success:
-                with codecs.open('tdm_papers.bib', 'a', encoding='utf-8', errors='ignore') as f:
+                with open('tdm_papers.bib', 'a', encoding='utf-8', errors='ignore') as f:
                     bib_data.to_file(f)
 
         print('\n')
