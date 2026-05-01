@@ -1,7 +1,8 @@
 extra info/
 logs/
 pdfs/
-relevant_resources/
+relevant resources/
+data/
 api_client.log
 config.json
 fermentedfoods.db
